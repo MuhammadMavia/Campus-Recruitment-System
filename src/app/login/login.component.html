@@ -1,3 +1,8 @@
-<p>
-  login works!
-</p>
+<h1>Campus Recruitment System!</h1>
+
+<input type="text" [(ngModel)]="user.email">
+<input type="password" [(ngModel)]="user.password"><br>
+<button (click)="doLogin()">Student Login</button>
+<button (click)="doCompanyLogin()">Company Login</button><br>
+<a routerLink="signup">SignUp company</a><br>
+<a routerLink="signup-students">SignUp Students</a>

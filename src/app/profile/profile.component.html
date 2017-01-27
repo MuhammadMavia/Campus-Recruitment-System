@@ -1,0 +1,12 @@
+<input type="text" [(ngModel)]="profile.heading"><br>
+<textarea [(ngModel)]="profile.description"></textarea><br>
+<button (click)="createProfile()">Submit</button>
+<hr>
+<ul>
+  <li *ngFor="let p of profiles;let i = index">
+    <h2>{{p.heading}}
+      <button (click)="removeProfile(p,i)">remove</button>
+    </h2>
+    <p>{{p.description}}</p>
+  </li>
+</ul>

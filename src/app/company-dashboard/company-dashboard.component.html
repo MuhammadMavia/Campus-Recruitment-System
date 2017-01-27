@@ -1,0 +1,16 @@
+<h1>Campus Recruitment System!</h1>
+
+<textarea [(ngModel)]="post.details"></textarea>
+<button (click)="createPost()">Post</button>
+
+<h3>Students</h3>
+<table border="1" cellspacing="0" cellpadding="5">
+  <tr>
+    <th>Name</th>
+    <th>email</th>
+  </tr>
+  <tr *ngFor="let stu of students">
+    <td>{{stu.name}}</td>
+    <td>{{stu.email}}</td>
+  </tr>
+</table>
